@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Please select your Gender"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/_20sdp" />
+
+
+    <Button
+        android:id="@+id/tvMen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@color/colorPrimaryLight"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="MEN"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/tvWomen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@color/colorPrimaryLight"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="WOMEN"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+</LinearLayout>
