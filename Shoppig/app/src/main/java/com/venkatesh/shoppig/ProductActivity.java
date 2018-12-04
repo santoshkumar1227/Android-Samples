@@ -80,7 +80,7 @@ public class ProductActivity extends AppCompatActivity {
                 } else {
                     String productsInCart = sharedPreference.retrieveProductFromCart();
                     ProductObject[] storedProducts = gson.fromJson(productsInCart, ProductObject[].class);
-
+                    singleProduct.setQnty(1);
                     List<ProductObject> allNewProduct = convertObjectArrayToListObject(storedProducts);
                     allNewProduct.add(singleProduct);
                     String addAndStoreNewProduct = gson.toJson(allNewProduct);
