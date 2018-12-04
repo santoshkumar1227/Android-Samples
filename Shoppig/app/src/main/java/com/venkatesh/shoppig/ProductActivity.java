@@ -72,6 +72,7 @@ public class ProductActivity extends AppCompatActivity {
                 String productsFromCart = sharedPreference.retrieveProductFromCart();
                 if (productsFromCart.equals("")) {
                     List<ProductObject> cartProductList = new ArrayList<>();
+                    singleProduct.setQnty(1);
                     cartProductList.add(singleProduct);
                     String cartValue = gson.toJson(cartProductList);
                     sharedPreference.addProductToTheCart(cartValue);
